@@ -27,7 +27,7 @@ METRICS_IMAGE   := $(BASE_IMAGE_NAME)/$(SERVICE_NAME)-metrics:$(VERSION)
 # ==============================================================================
 # Running from within k8s/kind
 
-dev-up-local:
+dev-up:
 	kind create cluster \
 		--image $(KIND) \
 		--name $(KIND_CLUSTER) \
